@@ -181,7 +181,7 @@ instance Functor [] where
 	-- fmap = map
 ```
 
-Functor for IO 인스턴스를 만드는 것을 어떨까?
+Functor for IO 인스턴스를 만드는 것은 어떨까?
 
 `fmap :: (a -> b) IO a -> IO b` 는 `IO` action 을 먼저 실행하여 `IO a` action 을 먼저 실행하고 반환하기 전에 함수를 적용하여(applies the function) 결과를 변환한다. 어려움없이 이것을 구현할 수 있다.
 
